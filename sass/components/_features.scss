@@ -1,0 +1,37 @@
+.features__list {
+  display: flex;
+}
+
+.features__item {
+  width: 270px;
+
+  &:not(:first-child){
+    margin-left: 30px;
+  }
+}
+
+.features__div {
+@include position();
+
+  background-color: $grey-bcg-color;
+  width: 270px;
+  height: 120px;
+  border-radius: 4px;
+}
+
+.features__title {
+  margin-bottom: 10px;
+  margin-top: 30px;
+
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.features__text {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: $secondary-text-color;
+}
